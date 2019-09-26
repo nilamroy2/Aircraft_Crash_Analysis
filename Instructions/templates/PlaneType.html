@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Aircraft_Crash Visualization Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Aircraft Crash Analysis</a>
+      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav ml-auto">
+          
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="PlaneType.html">Time  Line</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="report.html">Accident Report</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="WorstAccident.html">Worst Accidents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Worstgeoloc.html">Worst Geolocation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Content Section -->
+  <div class="container">
+        
+  <div class="container">
+  <div class="row">
+    <div class="col-md-2 custom-panel">
+      <div class="well">
+        <h5>SELECT Year:</h5>
+        <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
+        <select id="selDataset" onchange="optionChanged(this.value)">
+            <option value="dataset1">1910 - 1930</option>
+            <option value="dataset2">1930 - 1950</option>
+            <option value="dataset3">1950 - 1970</option>
+            <option value="dataset4">1970 - 1990</option>
+            <option value="dataset5">1990 - 2010</option>
+        </select>    
+      </div>   
+      <!-- <div>
+           <h5>SELECT Airline:</h5>
+        <select id="selAirline" onchange="optionChanged(this.value)"></select>
+      </div> -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <!-- <h3 class="panel-title">Airlines</h3> -->
+        </div>
+        <div id="sample-metadata" class="panel-body"></div>
+      </div>
+    </div>
+
+    <!-- <!--<div class="col-md-10">
+        <div class="col-md-6">
+          <div id="pie"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="gauge"></div>
+        </div>
+        <div class="col-md-12">
+          <div id="bubble"></div>
+        </div>
+    </div> -->
+  </div>
+  <div id="bar-plot"></div> 
+</div>
+    <div class="row">
+      <div class="col-lg-2 col-md-2">
+        <!-- Left box  -->
+        <!-- <div class="box">
+          <h3 class="title"></h3>Select Aircraft Manufacturer</h3>
+          <hr>
+          <div id="checkbox" class="form-group shiny-input-checkboxgroup shiny-input-container shiny-bound-input">
+              <label class="control-label" for="checkbox">
+            
+              </label>
+              <div class="shiny-options-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="All" checked="checked">
+                    <span>All</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Airbus">
+                    <span>Airbus</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Antonov">
+                    <span>Antonov</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="BAe">
+                    <span>BAe</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Boeing">
+                    <span>Boeing</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Cessna">
+                    <span>Cessna</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="CRJ">
+                    <span>CRJ</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="de Havilland">
+                    <span>de Havilland</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Douglas">
+                    <span>Douglas</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkbox" value="Embraer">
+                    <span>Embraer</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div> --> 
+      <div class="col-lg-10 col-md-10">
+        <!-- Right Box -->
+        <div id="plot"></div>
+      </div>
+    </div>
+  
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer">© Copyright coding Bootcamp 2017</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <script src="../static/js/airlines.js"></script>
+ 
+
+</body>
+
+</html>

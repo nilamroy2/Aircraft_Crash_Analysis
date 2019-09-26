@@ -1,0 +1,26 @@
+geo_id,country,accidents,fatalities,ground fat.
+1,USA,847,10794,133
+2,Russia,525,8453,25
+3,Canada,189,1796,2
+4,Brazil,188,2729,68
+5,Colombia,183,2932,28
+6,U.K.,109,1296,11
+7,France,105,2249,15
+8,Indonesia,101,2233,52
+9,Mexico,99,1266,53
+10,India,94,2331,27
+11,China,76,1789,56
+12,Italy,68,1310,6
+13,Venezuela,67,1107,71
+14,D.R. Congo,62,694,71
+15,Ukraine,62,1332,9
+16,Bolivia,61,638,88
+17,Philippines,61,875,7
+18,Peru,60,1343,5
+19,Germany,60,938,1
+20,Spain,54,2355,0
+21,Australia,50,395,0
+22,P.N. Guinea,49,368,2
+23,Atlantic Ocean,49,1200,0
+24,Kazakhstan,43,736,0
+25,Argentina,42,818,3
