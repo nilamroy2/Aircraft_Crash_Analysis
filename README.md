@@ -29,17 +29,18 @@ For Data Visualization part we created one Bar Plot which will show the year wis
 
 ![2-BasicMap](Images/crash20Years.png)
 
-We have also daynamically loaded data from Flask server and collected the JSON data for every 10 years and ploted it in a bar chart.
+We have also daynamically loaded data from Flask server and collected the JSON data for every 10 years and ploted it in a bar chart as shown in below figure.
+
+
+We have created a word-cloud map using javascript library where we are analysing what is the most frequent cause of the accidents.Our word size is varying acoording to the number of crash happened due to the same reason.
 
 
 
 ![2-BasicMap](Images/worstAccidents.png)
 
-
-
-    We Create a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
-
-   * data markers is reflecting the magnitude of the fetalities in their size and color.Fetalities with higher magnitudes were appeared in larger and different in color according to fetalities rate.
+We Create a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
+    
+   * data markers is reflecting the magnitude of the fetalities in their size and color.Fetalities with higher magnitudes   were appeared in larger and different in color according to fetalities rate.
 
    * Include popups that provide additional information about the crash when a marker is clicked.
 
