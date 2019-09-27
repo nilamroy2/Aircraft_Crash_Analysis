@@ -41,7 +41,7 @@ We have done further visualization using Leaflet.
 
 ![2-BasicMap](Images/worstAccidents.png)
 
-We Create a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
+We have created a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
     
    * data markers is reflecting the magnitude of the fetalities in their size and color.Fetalities with higher magnitudes   were appeared in larger and different in color according to fetalities rate.
 
