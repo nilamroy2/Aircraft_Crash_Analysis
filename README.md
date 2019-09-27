@@ -29,7 +29,7 @@ For Data Visualization part we created one Bar Plot which will show the year wis
 
 ![2-BasicMap](Images/crash20Years.png)
 
-We have also daynamically loaded data from Flask server and collected the JSON data for every 10 years and ploted it in a bar chart as shown in below figure.
+We have also daynamically loaded data from Flask server and collected the JSON data for every 20 years and ploted it in a bar chart as shown in below figure.
 
 ![2-BasicMap](Images/Crash_Dynamic.png)
 
