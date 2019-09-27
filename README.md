@@ -1,20 +1,38 @@
 # Aircraft_Crash_Analysis
-#                                           Visualizing Data with Leaflet
+                                         
 
 ## Background
 
-![1-Logo](Images/1-Logo.png)
+![2-BasicMap](Images/crash.png)
 
-Welcome to the United States Geological Survey, or USGS for short! The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
+Flying is considered as the safest way to travel as of today. But has that always been the case? Was flying as safe in the 20th century? Most of us have boarded an airplane manufactured by Boeing and Airbus, which are two of the biggest and most popular commercial flight manufacturers in the world. How many planes that have been manufactured by them have crashed in the past? What were some of the most common reasons for the crashes? It is questions like these that fueled our curiosity and interest towards this project- Aircraft crash analytics- a visual exploration of aircraft crashes since 1908.
 
-The USGS is interested in building a new set of tools that will allow them visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. Their hope is that being able to visualize their data will allow them to better educate the public and other government organizations (and hopefully secure more funding..) on issues facing our planet.
+The aviation industry is a mature industry, and is more than a hundred years old. So, there exists a lot of data in this field, especially aircraft crash data. This makes it very interesting, as we were able to grab data that helped us analyse the state of the aircraft safety over a period of an entire century!
+
+Through this project we have explained in detail, the methodology and tools used for implementing the data pipeline, right from getting the data from CSV file,cleaning and formatting data in jupyter notebook,loading the data in Postgres Database and querying data as we need to show an attractive visualization.
+
+## Structure:
+
+The project is divided logically into three parts:
+
+## Part 1- Data Collection
+For this project data is mainly collected from
+* aviation-safety.net/airlinesafety/
+* Keggle.com/aircrash-data
+
+## Part 2- Data Analysis
+After successfully collecting the data we imported it in jupyter notebook.We have done Data cleaning and date formating in jupyter notebook.Finally we load it in a Postgres Database.
 
 
+## Part 3- Data Visualization
+For Data Visualization part we created one Bar Plot which will show the year wise crash data with total number of fetalities.
+
+!(Images/crash20Years.png)
 
 
 ### Level 1: Basic Visualization
 
-![2-BasicMap](Images/2-BasicMap.png)
+![2-BasicMap](Images/crash20Years.png)
 
 Your first task is to visualize an earthquake data set.
 
