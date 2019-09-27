@@ -33,9 +33,9 @@ We have also daynamically loaded data from Flask server and collected the JSON d
 
 
 
+![2-BasicMap](Images/worstAccidents.png)
 
 
-2. **Import & Visualize the Data **
 
     We Create a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
 
@@ -45,7 +45,9 @@ We have also daynamically loaded data from Flask server and collected the JSON d
 
    * Create a legend that will provide context for our map data.
 
-   * our visualization looks something like the map above.
+   * our Worst geographical location map looks something like the map below and dedliest accident map looks something like the above map.
+   
+   ![2-BasicMap](Images/geoMap.png)
 
 - - -
 
