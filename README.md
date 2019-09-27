@@ -31,11 +31,13 @@ For Data Visualization part we created one Bar Plot which will show the year wis
 
 We have also daynamically loaded data from Flask server and collected the JSON data for every 10 years and ploted it in a bar chart as shown in below figure.
 
-![2-BasicMap](Images/Crash_Dyamic.png)
+![2-BasicMap](Images/Crash_Dynamic.png)
 
 We have created a word-cloud map using javascript library where we are analysing what is the most frequent cause of the accidents.Our word size is varying acoording to the number of crash happened due to the same reason.
 
 ![2-BasicMap](Images/wordcount.png)
+
+We have done further visualization using Leaflet.
 
 ![2-BasicMap](Images/worstAccidents.png)
 
