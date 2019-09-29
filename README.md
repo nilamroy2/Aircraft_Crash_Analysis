@@ -9,7 +9,7 @@ Flying is considered as the safest way to travel as of today. But has that alway
 
 The aviation industry is a mature industry, and is more than a hundred years old. So, there exists a lot of data in this field, especially aircraft crash data. This makes it very interesting, as we were able to grab data that helped us analyse the state of the aircraft safety over a period of an entire century!
 
-Through this project we have explained in detail, the methodology and tools used for implementing the data pipeline, right from getting the data from CSV file,cleaning and formatting data in jupyter notebook,loading the data in Postgres Database and querying data as we need to show an attractive visualization.
+Through this project we have explained in detail, the methodology and tools used for implementing the data pipeline, right from getting the data from CSV file,cleaning and formatting data in jupyter notebook,loading the data in PostgreSQL Database and querying data so we can represnt it in an understandable and attractive visiualization.
 
 ## Structure:
 
@@ -21,19 +21,19 @@ For this project data is mainly collected from
 * Keggle.com/aircrash-data
 
 ## Part 2- Data Analysis
-After successfully collecting the data we imported it in jupyter notebook.We have done Data cleaning and date formating in jupyter notebook.Finally we load it in a Postgres Database.
+After successfully collecting the data we imported it to jupyter notebook.We have done Data cleaning and date formating in jupyter notebook.Created corresponding tables in PostgreSQL. Then converted the csv data into dataframes and used SQLAlchemy to insert data into PostgreSQL Database. Used Flask to create various routes to get data from the database in JSON format.
 
 
 ## Part 3- Data Visualization
-For Data Visualization part we created one Bar Plot which will show the year wise crash data with total number of fetalities.
+For Data Visualization part we created a Bar Plot which shows the year wise crash data with total number of incidents per year.
 
 ![2-BasicMap](Images/crash20Years.png)
 
-We have also daynamically loaded data from Flask server and collected the JSON data for every 20 years and ploted it in a bar chart as shown in below figure.
+We have also daynamically queried the postgreSQL database and retreived data from Flask server in JSON format for every 20 years ( the year range is selected from a drop down list) and plotted it in a bar chart as shown in below figure. 
 
 ![2-BasicMap](Images/Crash_Dynamic.png)
 
-We have created a word-cloud map using javascript library where we are analysing what is the most frequent cause of the accidents.Our word size is varying acoording to the number of crash happened due to the same reason.
+We have created a word-cloud map using javascript library where we are analysing what is the most frequent cause of the accidents. The size of the displayed word in the word-cloud is based on the frequency of the word occured. The size of the word will allow us to visually understand the most frequent reasons for the cause of airplane accidents.
 
 ![2-BasicMap](Images/wordcount.png)
 
@@ -43,7 +43,7 @@ We have done further visualization using Leaflet.
 
 We have created a map using Leaflet that plots worst geographical location which is prone to crash and one more map which shows the deadliest accident happened in last 100 years based on their longitude and latitude.
     
-   * data markers is reflecting the magnitude of the fetalities in their size and color.Fetalities with higher magnitudes   were appeared in larger and different in color according to fetalities rate.
+   * data markers is reflecting the magnitude of the fatalities in their size and color.Fatalities with higher magnitudes appeared in larger and different in color according to fatalities rate.
 
    * Include popups that provide additional information about the crash when a marker is clicked.
 
@@ -53,7 +53,8 @@ We have created a map using Leaflet that plots worst geographical location which
    
    ![2-BasicMap](Images/geoMap.png)
 
-- - -
+Conclusions:
+    The data and visualization show that in 20th century the airplane accident rate was more when compared to recent times; but will this allow us to come to a conclusion that airplanes are more safer now compared to the previous century? We couldn't come to a conclusion based on our visualizations. Further angles of analysis might provide us a better insight into the airplane crash analysis.
 
 
 - - -
